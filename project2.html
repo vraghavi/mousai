@@ -1,5 +1,81 @@
-<html>
-  <body>
-    project 2
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <title>MOUSAI Podcast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#introduction" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="Requirements Summary">Requirements Summary <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#RequirementsSummary" class="w3-bar-item w3-button">Use Cases</a>
+          <a href="#stakeholderanalysis" class="w3-bar-item w3-button">Stakeholder Analysis</a>
+          <a href="#requirements" class="w3-bar-item w3-button">Requirements</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">High-Level Design <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#hightleveldesign" class="w3-bar-item w3-button">System Architecture</a>
+          <a href="#FileStorageDesign" class="w3-bar-item w3-button">File Storage Design</a>
+          <a href="#DatabaseDesign" class="w3-bar-item w3-button">Database Design</a>
+          <a href="#APIDesign" class="w3-bar-item w3-button">API Design</a>
+          <a href="#WebApplicationDesign" class="w3-bar-item w3-button">User Interface Design</a>
+          <a href="#RequirementTraceabilityMatrix" class="w3-bar-item w3-button">Requirement Traceability Matrix</a>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">Design Rationale <i
+            class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="#designRationale" class="w3-bar-item w3-button">System Architecture Rationale</a>
+          <a href="#DataTierRationale" class="w3-bar-item w3-button">Data Tier Rationale</a>
+          <a href="#APIDesignRationale" class="w3-bar-item w3-button">API Design Rationale</a>
+          <a href="#WebApplicationDesignRationale" class="w3-bar-item w3-button">User Interface Design Rationale</a>
+        </div>
+      </div>
+      <a href="#finalthoughts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Final Thoughts</a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#finalthoughts" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Final Thoughts</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- The Introduction Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="introduction">
+    </div>
+  </div>
   </body>
 </html>
