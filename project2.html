@@ -193,6 +193,54 @@
                     </tr>
                 </table>
             </ul>
+            <ul>
+                <li>Image processing Service:</li>
+                <table class="w3-table w3-bordered">
+                    <tr>
+                        <th>Test</th>
+                        <td>Goal</td>
+                        <td>Procedure</td>
+                    </tr>
+                    <tr>
+                        <th>1.1</th>
+                        <td>Sensor data received/captured</td>
+                        <td>Add sensor(s) to the system. Verify that sensors are outputting data.</td>
+                    </tr>
+                    <tr>
+                        <th>1.2</th>
+                        <td>Data processed into standard format.</td>
+                        <td>Feed the Sensor Data Processor captured data from connected devices. Validate that it is actively converting data to the standardized format.</td>
+                    </tr>
+                    <tr>
+                        <th>1.3</th>
+                        <td>Erroneous data removed</td>
+                        <td>Feed processed data into the Sensor Data Noise Reducer. Modify the data to include erroneous or null data points. Verify that the invalid data has been removed.</td>
+                    </tr>
+                    <tr>
+                        <th>1.4</th>
+                        <td>Cleaned data stored in a local database and sent to the web server and processed.</td>
+                        <td>Run data through Sensor Data Noise Reducer. Verify that this triggers the Persistence Module to store the data in the local relational database and POST data to the server and processed.</td>
+                    </tr>
+                </table>
+            </ul>
+            <ul>
+                <li>Location Service:</li>
+                <table class="w3-table w3-bordered">
+                    <tr>
+                        <th>Test</th>
+                        <td>Goal</td>
+                        <td>Procedure</td>
+                    </tr>
+                    <tr>
+                        <th>1.1</th>
+                        <td>The application should be able to take the user's live location.</td>
+                        <td>Login to the application, if not already accepted, the user should see a pop up to accept to enable GPS and use it by the application for the other services.</td>
+                    </tr>
+                </table>
+            </ul>
+            <li>Additional Software</li>
+            <p>An important component of the Image processing module is its ability to process data from external sensors. It may prove useful to either mock third-party sensor data or provide a tool that can generate data based on specs from multiple third-party image sensors and GPS location services. Also, an emulator for Android (version 7 and above) and iOS(version 10 and above) would be required to test the functionality on the mobile application.
+            </p>
 
         </div>
 
@@ -1069,7 +1117,7 @@
         </ul>
       </ul>
       <h3 style="padding-top: 64px" id="traceabilitymatrix">Traceability Matrix</h3>
-      <table class="w3-center" style="border:3px;padding:5px;" rules="all" cellpadding='1'>
+      <table class="w3-table w3-bordered">
         <th style="padding: 10px;">Test Case Number</th><th style="padding: 10px">Requirement ID</th></th>
         <tr><td style="padding: 5px;">1-16</td><td>FR1, NFR1</td></tr>
         <tr><td style="padding: 5px;">17-20</td><td>FR2, NFR1</td></tr>
