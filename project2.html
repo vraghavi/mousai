@@ -2,7 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <title>MOUSAI Podcast</title>
+  <title>VT smart parking system</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -25,38 +25,42 @@
   <div class="w3-top">
     <div class="w3-bar w3-black w3-card">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#introduction" class="w3-bar-item w3-button w3-padding-large">Test Scope</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="Requirements Summary">Test Plan<i
-            class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#RequirementsSummary" class="w3-bar-item w3-button">Use Cases</a>
-          <a href="#stakeholderanalysis" class="w3-bar-item w3-button">Stakeholder Analysis</a>
-          <a href="#requirements" class="w3-bar-item w3-button">Requirements</a>
+        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i>
+      </a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="Test Scope">Test Scope<i
+              class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#testscope" class="w3-bar-item w3-button">Introduction</a>
+            <a href="#requirements" class="w3-bar-item w3-button">Requirements being tested</a>
+            <a href="#outofscope" class="w3-bar-item w3-button">Out of scope requirements</a>
+          </div>
         </div>
-      </div>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">Test Procedure<i
-            class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#hightleveldesign" class="w3-bar-item w3-button">System Architecture</a>
-          <a href="#FileStorageDesign" class="w3-bar-item w3-button">File Storage Design</a>
-          <a href="#DatabaseDesign" class="w3-bar-item w3-button">Database Design</a>
-          <a href="#APIDesign" class="w3-bar-item w3-button">API Design</a>
-          <a href="#WebApplicationDesign" class="w3-bar-item w3-button">User Interface Design</a>
-          <a href="#RequirementTraceabilityMatrix" class="w3-bar-item w3-button">Requirement Traceability Matrix</a>
+        <a href="#testplan" class="w3-bar-item w3-button w3-padding-large">Test Plan</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">Test Procedure<i
+              class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#testprocedure" class="w3-bar-item w3-button">Phase 1</a>
+            <a href="#phase2" class="w3-bar-item w3-button">Phase 2</a>
+            <a href="#phase3" class="w3-bar-item w3-button">Phase 3</a>
+            <a href="#phase4" class="w3-bar-item w3-button">Phase 4</a>
+            <a href="#phase5" class="w3-bar-item w3-button">Phase 5</a>
+            <a href="#phase6" class="w3-bar-item w3-button">Phase 6</a>
+          </div>
         </div>
-      </div>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">Valdation Tests<i
-            class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="#designRationale" class="w3-bar-item w3-button">System Architecture Rationale</a>
-          <a href="#DataTierRationale" class="w3-bar-item w3-button">Data Tier Rationale</a>
-          <a href="#APIDesignRationale" class="w3-bar-item w3-button">API Design Rationale</a>
-          <a href="#WebApplicationDesignRationale" class="w3-bar-item w3-button">User Interface Design Rationale</a>
-        </div>
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">Valdation Tests<i
+              class="fa fa-caret-down"></i></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#validationtests" class="w3-bar-item w3-button">Test cases</a>
+            <a href="#tc1" class="w3-bar-item w3-button">Test Case 1</a>
+            <a href="#tc10" class="w3-bar-item w3-button">Test Case 10</a>
+            <a href="#tc20" class="w3-bar-item w3-button">Test Case 20</a>
+            <a href="#tc30" class="w3-bar-item w3-button">Test Case 30</a>
+            <a href="#tc40" class="w3-bar-item w3-button">Test Case 40</a>
+            <a href="#traceabilitymatrix" class="w3-bar-item w3-button">Traceability Matrix</a>
+          </div>
       </div>
 <!--       <a href="#finalthoughts" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Final Thoughts</a> -->
     </div>
@@ -65,9 +69,115 @@
   <!-- Page content -->
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-    <!-- The Introduction Section -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="introduction">
+    <!-- The Test Scope Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testscope">
+      <h1>Test Scope</h1>
+      <h2 class="w3-wide" id="testscope">Introduction</h2>
+      <p>
+      The system to be tested is the VT smart parking system. The system would enable the users to buy various types of Parking permits offered and then show the user the nearest spot available based on the category of the users like students, employees, visitors, etc. and bill the user for the parking.
+      </p>
+
+      <h2 class="w3-wide" id="testscope">Requirements Tested</h2>
+        <h3>Functional Requirements</h3>
+        <ul class="w3-left-align">
+          <li>FR-1. The System should provide a login and logout functionality using the Virginia Tech PID and a user-defined password.
+          </li>
+          <li>FR-2. The System should be GPS-enabled in order to take in the user’s live location.</li>
+          <li>FR-3. The System should suggest available Parking slots using the user’s location in ascending order of distance.</li>
+          <li>FR-4. The System should leverage image processing to capture if a certain Parking slot is available. Based on this availability, the System should update the database and also return the same results to the user</li>
+          <li>FR-5. The System should allow the user to search for the various Parking lots across campus.
+          </li>
+          <li>FR-6. The System should let the user book and pay for the Parking spot using Parking permits.</li>
+          <li>FR-7. In case the user does not have an already existing Parking permit, the System should allow the user to buy a fresh Parking permit.</li>
+          <li>FR-8. The System should enable the user to enter their details.
+          </li>
+          <li>FR-9. The System should display the Parking duration and Parking details.
+          </li>
+          <li>FR-10. The System should allow Parking owners to visualize parking patterns.
+            Assumption: It will be a graph with the parking slot locations and times showing the user trend of the parking availability over the last n days.</li>
+          <li>FR-11(NFR-5). The application must be able to store the Parking information of the student within the past 90 days.      </li>
+        </ul>
+      <p>
+
+      </p>
+        <h3>Non-Functional Requirements</h3>
+        <ul class="w3-left-align">
+          <li> NFR-1. The Smart Parking application should be able to run both on Android (version 7 and above) and iOS (version 10 and above).
+          </li>
+        </ul>
+      <p>
+
+      </p>
+
+      <h2 class="w3-wide" id="testscope">Out of scope of the testing plan</h2>
+      <p class="w3-container">
+        <ul class="w3-left-align">
+          <li> NFR-2. Any Student data will be encrypted with the required encryption standards.</li>
+          <li> NFR-3. The application must have an uptime of 99.7 percent.</li>
+          <li>NFR-4. The System shall be capable of recovering from an application or System failure, leaving the application and System in an operable state.</li>
+          <li>NFR-6. The Application should address future requirement changes or handle new requirements.</li>
+        </ul>
+     </p>
     </div>
+
+    <!-- The Test Scope Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testplan">
+      <h1>Test Plan</h1>
+    </div>
+
+    <!-- The Test Scope Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testscope">
+      <h1>Test Procedure</h1>
+    </div>
+
+    <!-- The Test Scope Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="validationtests">
+      <h1>Valdation Tests</h1>
+    </div>
+  
+    <!-- End Page Content -->
   </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    Presented by Swati Lamba, Yuechen Feng, Yuching Lin, Raghavi Vannala.
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
   </body>
 </html>
