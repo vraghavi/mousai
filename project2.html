@@ -131,8 +131,285 @@
     </div>
 
     <!-- The Test Scope Section -->
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="validationtests">
-      <h1>Valdation Tests</h1>
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="validationtests">
+      <h1 class="w3-center">Valdation Tests</h1>
+      <h4>Test Case 1:</h4>
+      <ul>
+        <li>Test the sanity of the login page on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Expectation: The login page should contain the following elements:</li>
+          <ul>
+            <li>Text box for username - should allow only characters and blah</li>
+            <li>Text box for password -</li>
+            <li>Clickable Button for login</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 2:</h4>
+      <ul>
+        <li>Test the sanity of the login page on android devices( version 17 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Expectation: The login page should contain the following elements:</li>
+          <ul>
+            <li>Text box for username - should allow only characters and blah</li>
+            <li>Text box for password -</li>
+            <li>Clickable Button for login</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 3:</h4>
+      <ul>
+        <li>Test user login with a valid PID as username and password on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Enter valid PID and password in the respective text box fields and click on login.</li>
+          <li>Expectation: The user should land on the homepage.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 4:</h4>
+      <ul>
+        <li>Test user login with a valid PID as username and password on all Android devices(version 7 and above).</li>
+        <ul>
+          <li>Open the application on an  android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Enter valid PID and password in the respective text box fields and click on login.</li>
+          <li>Expectation: The user should land on the homepage.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 5:</h4>
+      <ul>
+        <li>Test user login with an invalid PID as username on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Enter invalid PID and a valid password in the respective text box fields and click on login.</li>
+          <li>Expectation: The user should be prompted with error indication and not able to login.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 6:</h4>
+      <ul>
+        <li>Test user login with an invalid PID as username on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Enter invalid PID and a valid password in the respective text box fields and click on login.</li>
+          <li>Expectation: The user should be prompted with error indication and not able to login.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 7:</h4>
+      <ul>
+        <li>Test the sanity of the registration link on the login page on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Expectation: There should be a ‘register now’ clickable link.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 8:</h4>
+      <ul>
+        <li>Test the sanity of the registration link on the login page on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Expectation: There should be a ‘register now’ clickable link.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 9:</h4>
+      <ul>
+        <li>Test the sanity of the registration page on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link.</li>
+          <li>Expectation: User should land to registration page with the following elements:</li>
+          <ul>
+            <li>Text box for entering username - should allow only valid VT PIDs</li>
+            <li>Text box for password - with hidden value and a regex</li>
+            <li>Text box for confirm password - with hidden value</li>
+            <li>Clickable Button for Registration</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 10:</h4>
+      <ul>
+        <li>Test the sanity of the registration page on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link.</li>
+          <li>Expectation: User should land to registration page with the following elements:</li>
+          <ul>
+            <li>Text box for entering username - should allow only valid VT PIDs</li>
+            <li>Text box for password - with hidden value and a regex</li>
+            <li>Text box for confirm password - with hidden value</li>
+            <li>Clickable Button for Registration</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 11:</h4>
+      <ul>
+        <li>Test user registration with a valid PID as username and password on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a valid username as VT PID and set all the mandatory fields correctly.</li>
+          <li>Expectation: The user should be able to register successfully and be redirected to the login screen with a success message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 12:</h4>
+      <ul>
+        <li>Test user registration with a valid PID as username and password on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a valid username as VT PID and set all the mandatory fields correctly.</li>
+          <li>Expectation: The user should be able to register successfully and be redirected to the login screen with a success message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 13:</h4>
+      <ul>
+        <li>Test user registration with an invalid PID as username on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a invalid username as VT PID and set all the other mandatory fields correctly.</li>
+          <li>Expectation: The user should not be able to register and be prompted with a failure message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 14:</h4>
+      <ul>
+        <li>Test user registration with an invalid PID as username on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a invalid username as VT PID and set all the other mandatory fields correctly.</li>
+          <li>Expectation: The user should not be able to register and be prompted with a failure message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 15:</h4>
+      <ul>
+        <li>Test user registration with a valid PID as username and invalid password on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a valid username as VT PID and set all the other mandatory fields correctly except the password regex.</li>
+          <li>Expectation: The user should not be able to register and be prompted with a failure message</li>
+        </ul>
+      </ul>
+      <h4>Test Case 16:</h4>
+      <ul>
+        <li>Test user registration with a valid PID as username and invalid password on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>If one is not already logged in, we should land on the login page.</li>
+          <li>Click on the ‘register now’ link and the registration page should open.</li>
+          <li>Enter a valid username as VT PID and set all the other mandatory fields correctly except the password regex.</li>
+          <li>Expectation: The user should not be able to register and be prompted with a failure message</li>
+        </ul>
+      </ul>
+      <h4>Test Case 17:</h4>
+      <ul>
+        <li>Test location service with GPS enabled on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>On the Home page, you should be prompted to allow use of GPS, accept it.</li>
+          <li>Expectation: The current user location should be taken up in the application.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 18:</h4>
+      <ul>
+        <li>Test location service with GPS enabled on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>On the Home page, you should be prompted to allow use of GPS, accept it.</li>
+          <li>Expectation: The current user location should be taken up in the application.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 19:</h4>
+      <ul>
+        <li>Test location service with GPS disabled on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>On the Home page, you should be prompted to allow use of GPS, accept it.</li>
+          <li>Expectation: The application should display a prompt that the GPS is disabled and needs to be turned on.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 20:</h4>
+      <ul>
+        <li>Test location service with GPS disabled on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>On the Home page, you should be prompted to allow use of GPS, accept it.</li>
+          <li>Expectation: The application should display a prompt that the GPS is disabled and needs to be turned on.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 21:</h4>
+      <ul>
+        <li>Profile page link sanity on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>Expectation: On the Home page, there should be a link to the Profile page.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 22:</h4>
+      <ul>
+        <li>Profile page link sanity on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>Expectation: On the Home page, there should be a link to the Profile page.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 23:</h4>
+      <ul>
+        <li>PProfile page sanity on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>Expectation: User should land to profile page with the following elements:</li>
+          <ul>
+            <li>Text box with disabled username having the PID - not editable</li>
+            <li>Enabled Text box for updating password - with hidden value and a regex</li>
+            <li>Enabled Text box for confirm password - with hidden value</li>
+            <li>Other editable fields such as name, etc.</li>
+            <li>A clickable Update button</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 24:</h4>
+      <ul>
+        <li>Profile page sanity on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>Expectation: User should land to profile page with the following elements:</li>
+          <ul>
+            <li>Text box with disabled username having the PID - not editable</li>
+            <li>Enabled Text box for updating password - with hidden value and a regex</li>
+            <li>Enabled Text box for confirm password - with hidden value</li>
+            <li>Other editable fields such as name, etc.</li>
+            <li>A clickable Update button</li>
+          </ul>
+        </ul>
+      </ul>
+
     </div>
   
     <!-- End Page Content -->
