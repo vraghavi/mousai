@@ -377,7 +377,7 @@
       </ul>
       <h4>Test Case 23:</h4>
       <ul>
-        <li>PProfile page sanity on iOS devices( version 10 and above).</li>
+        <li>Profile page sanity on iOS devices( version 10 and above).</li>
         <ul>
           <li>Open the application on an iOS device.</li>
           <li>Login with valid credentials.</li>
@@ -407,6 +407,593 @@
             <li>Other editable fields such as name, etc.</li>
             <li>A clickable Update button</li>
           </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 25:</h4>
+      <ul>
+        <li>The user should be able to add/update the details on the Profile page on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>User should land to profile page</li>
+          <li>Update the following elements:</li>
+          <ul>
+            <li>Enabled Text box for updating password - with hidden value and a regex</li>
+            <li>Enabled Text box for confirm password - with hidden value</li>
+            <li>Other editable fields such as name, etc.</li>
+          </ul>
+          <li>Click on Update</li>
+          <li>Expectation: The profile details should be updated successfully with a success message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 26:</h4>
+      <ul>
+        <li>The user should be able to add/update the details on the Profile page on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>User should land to profile page</li>
+          <li>Update the following elements:</li>
+          <ul>
+            <li>Enabled Text box for updating password - with hidden value and a regex</li>
+            <li>Enabled Text box for confirm password - with hidden value</li>
+            <li>Other editable fields such as name, etc.</li>
+          </ul>
+          <li>Click on Update</li>
+          <li>Expectation: The profile details should be updated successfully with a success message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 27:</h4>
+      <ul>
+        <li>The user should not be able to add/update the password details with invalid password regex on the Profile page on iOS devices( version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>User should land to profile page</li>
+          <li>Update the following elements:</li>
+          <ul>
+            <li>Enter new password with invalid regex</li>
+            <li>Enter same password in confirm password field</li>
+          </ul>
+          <li>Click on Update</li>
+          <li>Expectation: The password details should not be updated successfully with a failure message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 28:</h4>
+      <ul>
+        <li>The user should not be able to add/update the password details with invalid password regex on the Profile page on android devices( version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, GOTO Profile Page</li>
+          <li>User should land to profile page</li>
+          <li>Update the following elements:</li>
+          <ul>
+            <li>Enter new password with invalid regex</li>
+            <li>Enter same password in confirm password field</li>
+          </ul>
+          <li>Click on Update</li>
+          <li>Expectation: The password details should not be updated successfully with a failure message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 29:</h4>
+      <ul>
+        <li>Test whether the application processes images to capture the presence of a vehicle in the parking slot.</li>
+        <ul>
+          <li>Assumption: Images for an X parking slot are being mimicked.</li>
+          <li>The image is received by the image processing module.</li>
+          <li>The image contains a vehicle in the parking spot.</li>
+          <li>Expectation: The module should update the database with the occupied status of the parking slot.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 30:</h4>
+      <ul>
+        <li>Test whether the application processes images to capture the absence of the vehicle in the parking slot.</li>
+        <ul>
+          <li>Assumption: Images for an X parking slot are being mimicked.</li>
+          <li>The image is received by the image processing module.</li>
+          <li>The image contains no vehicle in the parking spot.</li>
+          <li>Expectation: The module should update the database with the empty status of the parking slot.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 31:</h4>
+      <ul>
+        <li>Test whether the application processes an image to capture the absence of the vehicle in the parking slot though there is presence of vehicle in the image.</li>
+        <ul>
+          <li>Assumption: Images for an X parking slot are being mimicked.</li>
+          <li>The image is received by the image processing module.</li>
+          <li>The image contains no vehicle in the parking spot but a vehicle parked in the opposite parking slot.</li>
+          <li>Expectation: The module should update the database with the empty status of the parking slot.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 32:</h4>
+      <ul>
+        <li>Test whether the application processes images to capture the absence of the vehicle in the parking slot though there is presence of other objects.</li>
+        <ul>
+          <li>Assumption: Images for an X parking slot are being mimicked.</li>
+          <li>The image is received by the image processing module.</li>
+          <li>The image contains no vehicle in the parking spot but a person with a pet standing in the parking slot.</li>
+          <li>Expectation: The module should update the database with the empty status of the parking slot.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 33:</h4>
+      <ul>
+        <li>Test user to book parking slot on ios device (version 10 and above) - base on searching test case.</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Booking Page.</li>
+          <li>Users should land to booking page.</li>
+          <li>Users view the available parking slot.</li>
+          <li>Users choose their preferred parking slot.</li>
+          <li>The booking page should contain the following elements:</li>
+          <ul>
+            <li>Text box for user to input license plate number.</li>
+            <li>Details of the chosen parking slot present in a row:</li>
+            <ul>
+              <li>Selected parking lot</li>
+              <li>Selected parking date</li>
+              <li>Selected parking time duration</li>
+              <li>Selected parking slot</li>
+            </ul>
+            <li>Total amount of parking fee</li>
+            <li>A clickable Payment button</li>
+          </ul>
+          <li>Click on the payment button.</li>
+          <li>Expectation: The module should confirm the booking order and process to pay the parking fee.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 34:</h4>
+      <ul>
+        <li>Test user to book parking slot on android device (version 7 and above) - base on searching test case</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Booking Page.</li>
+          <li>Users should land to booking page.</li>
+          <li>Users view the available parking slot.</li>
+          <li>Users choose their preferred parking slot.</li>
+          <li>The booking page should contain the following elements:</li>
+          <ul>
+            <li>Text box for user to input license plate number.</li>
+            <li>Details of the chosen parking slot present in a row:</li>
+            <ul>
+              <li>Selected parking lot</li>
+              <li>Selected parking date</li>
+              <li>Selected parking time duration</li>
+              <li>Selected parking slot</li>
+            </ul>
+            <li>Total amount of parking fee</li>
+            <li>A clickable Payment button</li>
+          </ul>
+          <li>Click on the payment button.</li>
+          <li>Expectation: The module should confirm the booking order and process to pay the parking fee.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 35:</h4>
+      <ul>
+        <li>Test user to check/modify order on iOS device (version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Check order Page.</li>
+          <li>User should land to check order page.</li>
+          <li>User are able to view the booked order.</li>
+          <li>The check order page should contain the following elements:</li>
+          <ul>
+            <li>License plate number</li>
+            <li>Selected parking lot</li>
+            <li>Selected parking date</li>
+            <li>Selected parking time duration</li>
+            <li>Selected parking slot</li>
+            <li>Total amount of parking fee</li>
+            <li>Back button - to land back to home page</li>
+            <li>Cancel button - cancel the order and  land back to home page</li>
+          </ul>
+          <li>Expectation: Redirect user back to the home page if click on the back button or cancel the order and redirect user back to the home page if click on the cancel button</li>
+        </ul>
+      </ul>
+      <h4>Test Case 36:</h4>
+      <ul>
+        <li>Test logged-in user to check/modify order on android device (version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Check order Page.</li>
+          <li>User should land to check order page.</li>
+          <li>User are able to view the booked order.</li>
+          <li>The check order page should contain the following elements:</li>
+          <ul>
+            <li>License plate number</li>
+            <li>Selected parking lot</li>
+            <li>Selected parking date</li>
+            <li>Selected parking time duration</li>
+            <li>Selected parking slot</li>
+            <li>Total amount of parking fee</li>
+            <li>Back button - to land back to home page</li>
+            <li>Cancel button - cancel the order and  land back to home page</li>
+          </ul>
+          <li>Expectation: Redirect user back to the home page if click on the back button or cancel the order and redirect user back to the home page if click on the cancel button</li>
+        </ul>
+      </ul>
+      <h4>Test Case 37:</h4>
+      <ul>
+        <li>Test user does have a parking permit and has enough money in it when booking orders on an ios device (version 10 and above).</li>
+        <ul>
+          <li>Booking parking slot on an iOS device.</li>
+          <li>User should already have a parking permit.</li>
+          <li>Click on the payment button on Booking page - base on test case 33.</li>
+          <li>From Booking Page, goto Payment Page.</li>
+          <li>User have enough deposit money in parking permit to pay the current parking fee.</li>
+          <li>Expectation: User pay the parking with parking permit successfully.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 38:</h4>
+      <ul>
+        <li>Test user does have a parking permit and has enough money in it when booking orders on an android device (version 7 and above).</li>
+        <ul>
+          <li>Booking parking slot on an android device.</li>
+          <li>User should already have a parking permit.</li>
+          <li>Click on the payment button on Booking page - base on test case 33.</li>
+          <li>From Booking Page, goto Payment Page.</li>
+          <li>User have enough deposit money in parking permit to pay the current parking fee.</li>
+          <li>Expectation: User pay the parking with parking permit successfully.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 39:</h4>
+      <ul>
+        <li>Test user does have a parking permit but does not have enough money in it when booking an order on an ios device (version 10 and above).</li>
+        <ul>
+          <li>Booking parking slot on an iOS device.</li>
+          <li>User should already have a parking permit.</li>
+          <li>Click on the payment button on Booking page - base on test case 33.</li>
+          <li>From Booking Page, goto Payment Page.</li>
+          <li>User does not have enough deposit money in parking permit to pay the current parking fee.</li>
+          <li>Expectation: User fails to pay the parking with a parking permit and should be prompted with a ‘not have enough money in parking permit’ message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 40:</h4>
+      <ul>
+        <li>Test user does have a parking permit but does not have enough money in it when booking an order on an android device (version 7 and above).</li>
+        <ul>
+          <li>Booking parking slot on an android device.</li>
+          <li>User should already have a parking permit.</li>
+          <li>Click on the payment button on Booking page - base on test case 33.</li>
+          <li>From Booking Page, goto Payment Page.</li>
+          <li>User does not have enough deposit money in parking permit to pay the current parking fee.</li>
+          <li>Expectation: User fails to pay the parking with a parking permit and should be prompted with a ‘not have enough money in parking permit’ message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 41:</h4>
+      <ul>
+        <li>Test user does not have a parking permit when booking on an iOS device(version 10 and above).</li>
+        <ul>
+          <li>Booking parking slot on an iOS device.</li>
+          <li>User do not have a parking permit yet.</li>
+          <li>Expectation: Users fail to process the payment  page and should be prompted with a ‘not have a parking permit’ message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 42:</h4>
+      <ul>
+        <li>Test user does not have a parking permit when booking on an android device (version 7 and above).
+        </li>
+        <ul>
+          <li>Booking parking slot on an android device.</li>
+          <li>User do not have a parking permit yet.</li>
+          <li>Expectation: Users fail to process the payment  page and should be prompted with a ‘not have a parking permit’ message.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 43:</h4>
+      <ul>
+        <li>Test buying parking permit on an ios device (version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Parking Permit Page.</li>
+          <li>User should land to parking permit page.</li>
+          <li>User should not have a parking permit yet.</li>
+          <li>The parking permit page should show:</li>
+          <ul>
+            <li>A message that the user does not have one.</li>
+            <li>A clickable buy parking permit button.</li>
+          </ul>
+          <li>Click on the buy parking permit page to purchase the parking permit and should show:</li>
+          <ul>
+            <li>Text box to input user name</li>
+            <li>Text box to input license plate number</li>
+            <li>Drop down menu to choose user type - Faculty, Student or Visitor</li>
+            <li>Confirm and payment button</li>
+          </ul>
+          <li>Expectation: After buying parking permit, the parking permit page should contain the following elements:</li>
+          <ul>
+            <li>Massage that the user does have a parking permit</li>
+            <li>User name</li>
+            <li>User type - Faculty, Student or Visitor</li>
+            <li>Issued date</li>
+            <li>Expiry date</li>
+            <li>License plate number</li>
+            <li>Deposit money amount in parking permit</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 44:</h4>
+      <ul>
+        <li>Test buying parking permit on an android device (version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Parking Permit Page.</li>
+          <li>User should land to parking permit page.</li>
+          <li>User should not have a parking permit yet.</li>
+          <li>The parking permit page should show:</li>
+          <ul>
+            <li>A message that the user does not have one.</li>
+            <li>A clickable buy parking permit button.</li>
+          </ul>
+          <li>Click on the buy parking permit page to purchase the parking permit and should show:</li>
+          <ul>
+            <li>Text box to input user name</li>
+            <li>Text box to input license plate number</li>
+            <li>Drop down menu to choose user type - Faculty, Student or Visitor</li>
+            <li>Confirm and payment button</li>
+          </ul>
+          <li>Expectation: After buying parking permit, the parking permit page should contain the following elements:</li>
+          <ul>
+            <li>Massage that the user does have a parking permit</li>
+            <li>User name</li>
+            <li>User type - Faculty, Student or Visitor</li>
+            <li>Issued date</li>
+            <li>Expiry date</li>
+            <li>License plate number</li>
+            <li>Deposit money amount in parking permit</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 45:</h4>
+      <ul>
+        <li>Test deposit money in parking permit on iOS device (version 10 and above).</li>
+        <ul>
+          <li>Open the application on an iOS device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Parking Permit Page.</li>
+          <li>User should land to parking permit page.</li>
+          <li>User should have a parking permit already.</li>
+          <li>The parking permit page should show:</li>
+          <ul>
+            <li>Massage that the user does have a parking permit</li>
+            <li>User name</li>
+            <li>User type - Faculty, Student or Visitor</li>
+            <li>Issued date</li>
+            <li>Expiry date</li>
+            <li>License plate number</li>
+            <li>Deposit money amount in parking permit</li>
+            <li>A clickable Deposit Money button</li>
+          </ul>
+          <li>Click on the deposit money button to add money into the parking permit</li>
+          <li>Enter the amount that wanted to add and the pay card(debit card or credit card) information:</li>
+          <ul>
+            <li>Amount wanted to add in parking permit - number</li>
+            <li>Card user name</li>
+            <li>Card number</li>
+            <li>Card expiry date</li>
+            <li>Card security code</li>
+          </ul>
+          <li>Wait for payment validation and processing.</li>
+          <li>Expectation: User successfully add desired money in parking permit.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 46:</h4>
+      <ul>
+        <li>Test deposit money in parking permit on android device (version 7 and above).</li>
+        <ul>
+          <li>Open the application on an android device.</li>
+          <li>Login with valid credentials.</li>
+          <li>From Home Page, goto Parking Permit Page.</li>
+          <li>User should land to parking permit page.</li>
+          <li>User should have a parking permit already.</li>
+          <li>The parking permit page should show:</li>
+          <ul>
+            <li>Massage that the user does have a parking permit</li>
+            <li>User name</li>
+            <li>User type - Faculty, Student or Visitor</li>
+            <li>Issued date</li>
+            <li>Expiry date</li>
+            <li>License plate number</li>
+            <li>Deposit money amount in parking permit</li>
+            <li>A clickable Deposit Money button</li>
+          </ul>
+          <li>Click on the deposit money button to add money into the parking permit</li>
+          <li>Enter the amount that wanted to add and the pay card(debit card or credit card) information:</li>
+          <ul>
+            <li>Amount wanted to add in parking permit - number</li>
+            <li>Card user name</li>
+            <li>Card number</li>
+            <li>Card expiry date</li>
+            <li>Card security code</li>
+          </ul>
+          <li>Wait for payment validation and processing.</li>
+          <li>Expectation: User successfully add desired money in parking permit.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 47:</h4>
+      <ul>
+        <li>Test parking details service on iOS device (version 10 and above).</li>
+        <ul>
+          <li>After the test user login to the menu of the application on iOS device successfully</li>
+          <li>Go to the parking details section and click on one detail element.</li>
+          <li>Expectation: Each element should contain the following elements:</li>
+          <ul>
+            <li>delete button</li>
+            <li>archive button</li>
+            <li>booking time</li>
+            <li>booking role</li>
+            <li>slot location</li>
+            <li>payment information</li>
+          </ul>
+          <li>Press the delete button of one detail element, it should be removed</li>
+          <li>Press the archive button of one detail element, it should be archived</li>
+        </ul>
+      </ul>
+      <h4>Test Case 48:</h4>
+      <ul>
+        <li>Test parking details service on android device (version 7 and above).</li>
+        <ul>
+          <li>After the test user login to the menu of the application on android device successfully</li>
+          <li>Go to the parking details section and click on one detail element.</li>
+          <li>Expectation: Each element should contain the following elements:</li>
+          <ul>
+            <li>delete button</li>
+            <li>archive button</li>
+            <li>booking time</li>
+            <li>booking role</li>
+            <li>slot location</li>
+            <li>payment information</li>
+          </ul>
+          <li>Press the delete button of one detail element, it should be removed</li>
+          <li>Press the archive button of one detail element, it should be archived</li>
+        </ul>
+      </ul>
+      <h4>Test Case 49:</h4>
+      <ul>
+        <li>Test parking history service on iOS device (version 10 and above).</li>
+        <ul>
+          <li>After the test user login to the menu of the application on iOS device successfully</li>
+          <li>Go to the parking history section.</li>
+          <li>Expectation: The history page should contain following elements:</li>
+          <ul>
+            <li>Search Bar</li>
+            <li>Search Button</li>
+            <li>Delete Button</li>
+            <li>DeleteAll Button</li>
+          </ul>
+          <li>User should be able to input some words in the search bar.</li>
+          <li>User should be able to press the search button.</li>
+          <li>After pressing the search button, history containing key words should be displayed in the list.</li>
+          <li>After clicking the delete button of one history record, the record should be removed.</li>
+          <li>After clicking the deleteAll button, all history records should be removed.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 50:</h4>
+      <ul>
+        <li>Test parking history service on android device (version 7 and above).</li>
+        <ul>
+          <li>After the test user login to the menu of the application on android device successfully</li>
+          <li>Go to the parking history section.</li>
+          <li>Expectation: The history page should contain following elements:</li>
+          <ul>
+            <li>Search Bar</li>
+            <li>Search Button</li>
+            <li>Delete Button</li>
+            <li>DeleteAll Button</li>
+          </ul>
+          <li>User should be able to input some words in the search bar.</li>
+          <li>User should be able to press the search button.</li>
+          <li>After pressing the search button, history containing key words should be displayed in the list.</li>
+          <li>After clicking the delete button of one history record, the record should be removed.</li>
+          <li>After clicking the deleteAll button, all history records should be removed.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 51:</h4>
+      <ul>
+        <li>Test Parking Trend Service on iOS device (version 10 and above).</li>
+        <ul>
+          <li>After the user successfully login to the iOS application and go to the menu</li>
+          <li>The graph should display the parking trends in some number of days.</li>
+          <li>Expectation: the graph should contain the following elements:</li>
+          <ul>
+            <li>Parking trends in N days</li>
+            <li>Drop down button which can choose the number of days</li>
+          </ul>
+          <li>After pressing the drop down button, the use should be able to select different days of parking trends</li>
+          <li>The parking trends in the graph should be able to match the number in the drop down button.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 52:</h4>
+      <ul>
+        <li>Test Parking Trend Service on android device (version 7 and above).</li>
+        <ul>
+          <li>After the user successfully login to the android application and go to the menu</li>
+          <li>The graph should display the parking trends in some number of days.</li>
+          <li>Expectation: the graph should contain the following elements:</li>
+          <ul>
+            <li>Parking trends in N days</li>
+            <li>Drop down button which can choose the number of days</li>
+          </ul>
+          <li>After pressing the drop down button, the use should be able to select different days of parking trends</li>
+          <li>The parking trends in the graph should be able to match the number in the drop down button.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 53:</h4>
+      <ul>
+        <li>Test whether the application is given the location with an iOS device (version 10 and above).</li>
+        <ul>
+          <li>Navigate to the “book parking slot” page.</li>
+          <li>The page should contain:</li>
+          <ul>
+            <li>A representation of the map with the below details:</li>
+            <ul>
+              <li>Current location: The application should get the current location from location services.</li>
+              <li>Available nearby parking slots in green color: The application should get the data from the list of parking slots managed in the database and represent it on the map.</li>
+            </ul>
+            <li>A text area to enter the location - should allow entering any data.</li>
+            <li>A clickable search button to search the slots near the location entered.</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 54:</h4>
+      <ul>
+        <li>Test whether the application is given the location with an android device (version 7 and above).</li>
+        <ul>
+          <li>Navigate to the “book parking slot” page.</li>
+          <li>The page should contain:</li>
+          <ul>
+            <li>A representation of the map with the below details:</li>
+            <ul>
+              <li>Current location: The application should get the current location from location services.</li>
+              <li>Available nearby parking slots in green color: The application should get the data from the list of parking slots managed in the database and represent it on the map.</li>
+            </ul>
+            <li>A text area to enter the location - should allow entering any data.</li>
+            <li>A clickable search button to search the slots near the location entered.</li>
+          </ul>
+        </ul>
+      </ul>
+      <h4>Test Case 55:</h4>
+      <ul>
+        <li>Test whether the application searches the right available parking slots within 1 mile radius of the given location with an iOS device (version 10 and above).</li>
+        <ul>
+          <li>Navigate to the “book parking slot” page.</li>
+          <li>The page should contain:</li>
+          <ul>
+            <li>A representation of the map with the below details:</li>
+            <ul>
+              <li>Current location: The application should get the current location from location services</li>
+              <li>Available parking slots within 1 mile radius of the given location: The application should get the data from the list of parking slots managed in the database and represent it on the map.</li>
+            </ul>
+            <li>A text area to enter the location - should allow entering any data.</li>
+            <li>A clickable search button to search the slots near the location entered.</li>
+          </ul>
+          <li>When searched for the location, the application should get the data from the list of parking slots managed in the database and represent it on the map with available parking slots.</li>
+        </ul>
+      </ul>
+      <h4>Test Case 56:</h4>
+      <ul>
+        <li>Test whether the application searches the right available parking slots within 1 mile radius of the given location with an android device (version 7 and above).</li>
+        <ul>
+          <li>Navigate to the “book parking slot” page.</li>
+          <li>The page should contain:</li>
+          <ul>
+            <li>A representation of the map with the below details:</li>
+            <ul>
+              <li>Current location: The application should get the current location from location services</li>
+              <li>Available parking slots within 1 mile radius of the given location: The application should get the data from the list of parking slots managed in the database and represent it on the map.</li>
+            </ul>
+            <li>A text area to enter the location - should allow entering any data.</li>
+            <li>A clickable search button to search the slots near the location entered.</li>
+          </ul>
+          <li>When searched for the location, the application should get the data from the list of parking slots managed in the database and represent it on the map with available parking slots.</li>
         </ul>
       </ul>
 
