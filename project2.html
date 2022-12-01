@@ -59,6 +59,7 @@
             <a href="#tc20" class="w3-bar-item w3-button">Test Case 20</a>
             <a href="#tc30" class="w3-bar-item w3-button">Test Case 30</a>
             <a href="#tc40" class="w3-bar-item w3-button">Test Case 40</a>
+            <a href="#tc50" class="w3-bar-item w3-button">Test Case 50</a>
             <a href="#traceabilitymatrix" class="w3-bar-item w3-button">Traceability Matrix</a>
           </div>
       </div>
@@ -300,11 +301,12 @@
           <ul>
             <li>Text box for entering username - should allow only valid VT PIDs</li>
             <li>Text box for password - with hidden value and a regex</li>
-            <li>Text box for confirm password - with hidden value</li>
+            <li id="tc10">Text box for confirm password - with hidden value</li>
             <li>Clickable Button for Registration</li>
           </ul>
         </ul>
       </ul>
+
       <h4>Test Case 10:</h4>
       <ul>
         <li>Test the sanity of the registration page on android devices( version 7 and above).</li>
@@ -413,7 +415,7 @@
         <ul>
           <li>Open the application on an iOS device.</li>
           <li>Login with valid credentials.</li>
-          <li>On the Home page, you should be prompted to allow use of GPS, accept it.</li>
+          <li id="tc20">On the Home page, you should be prompted to allow use of GPS, accept it.</li>
           <li>Expectation: The application should display a prompt that the GPS is disabled and needs to be turned on.</li>
         </ul>
       </ul>
@@ -555,7 +557,7 @@
         <ul>
           <li>Assumption: Images for an X parking slot are being mimicked.</li>
           <li>The image is received by the image processing module.</li>
-          <li>The image contains a vehicle in the parking spot.</li>
+          <li id="tc30">The image contains a vehicle in the parking spot.</li>
           <li>Expectation: The module should update the database with the occupied status of the parking slot.</li>
         </ul>
       </ul>
@@ -722,7 +724,7 @@
           <li>Click on the payment button on Booking page - base on test case 33.</li>
           <li>From Booking Page, goto Payment Page.</li>
           <li>User does not have enough deposit money in parking permit to pay the current parking fee.</li>
-          <li>Expectation: User fails to pay the parking with a parking permit and should be prompted with a ‘not have enough money in parking permit’ message.</li>
+          <li id="tc40">Expectation: User fails to pay the parking with a parking permit and should be prompted with a ‘not have enough money in parking permit’ message.</li>
         </ul>
       </ul>
       <h4>Test Case 40:</h4>
@@ -942,7 +944,7 @@
           <li>User should be able to input some words in the search bar.</li>
           <li>User should be able to press the search button.</li>
           <li>After pressing the search button, history containing key words should be displayed in the list.</li>
-          <li>After clicking the delete button of one history record, the record should be removed.</li>
+          <li id="tc50">After clicking the delete button of one history record, the record should be removed.</li>
           <li>After clicking the deleteAll button, all history records should be removed.</li>
         </ul>
       </ul>
@@ -1066,6 +1068,21 @@
           <li>When searched for the location, the application should get the data from the list of parking slots managed in the database and represent it on the map with available parking slots.</li>
         </ul>
       </ul>
+      <h3 style="padding-top: 64px" id="traceabilitymatrix">Traceability Matrix</h3>
+      <table class="w3-center" style="border:3px;padding:5px;" rules="all" cellpadding='1'>
+        <th style="padding: 10px;">Test Case Number</th><th style="padding: 10px">Requirement ID</th></th>
+        <tr><td style="padding: 5px;">1-16</td><td>FR1, NFR1</td></tr>
+        <tr><td style="padding: 5px;">17-20</td><td>FR2, NFR1</td></tr>
+        <tr><td style="padding: 5px;">21-28</td><td>FR8, NFR1</td></tr>
+        <tr><td style="padding: 5px;">29-32</td><td>FR4, NFR1</td></tr>
+        <tr><td style="padding: 5px;">33-42</td><td>FR6, NFR1</td></tr>
+        <tr><td style="padding: 5px;">43-46</td><td>FR7, NFR1</td></tr>
+        <tr><td style="padding: 5px;">47-48</td><td>FR9, NFR1</td></tr>
+        <tr><td style="padding: 5px;">49-50</td><td>NFR5, NFR1</td></tr>
+        <tr><td style="padding: 5px;">51-52</td><td>FR10, NFR15</td></tr>
+        <tr><td style="padding: 5px;">53-54</td><td>FR3, NFR1</td></tr>
+        <tr><td style="padding: 5px;">55-56</td><td>FR5, NFR1</td></tr>
+      </table>
 
     </div>
   
