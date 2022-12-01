@@ -117,7 +117,6 @@
           <li>NFR-4. The System shall be capable of recovering from an application or System failure, leaving the application and System in an operable state.</li>
           <li>NFR-6. The Application should address future requirement changes or handle new requirements.</li>
         </ul>
-     </p>
     </div>
 
     <!-- The Test Scope Section -->
@@ -128,44 +127,77 @@
     <!-- The Test Scope Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testprocedure">
       <h1>Test Procedure</h1>
+        <div class="w3-left-align">
+            <h4 class="w3-left-align">Phase 1</h4>
+            <p>Main purpose: Functional testing</p>
+            <li>Testing basic independent functions</li>
+            <ul>
+                <p>Specific test procedure/Test case skeletons:</p>
+                <li>Login Service:</li>
+                <table class="w3-table w3-bordered">
+                    <tr>
+                        <td>Test</td>
+                        <td>Goal</td>
+                        <td>Procedure</td>
+                    </tr>
+                    <tr>
+                        <td>1.1</td>
+                        <td>If a new user, has the option to register</td>
+                        <td>Open the application on an android and iOS device, there should be a “register” option which should open a registration page.</td>
+                    </tr>
+                    <tr>
+                        <td>1.2</td>
+                        <td>If new user, should register successfully</td>
+                        <td>On the registration page, the user should enter the VT PID and set a password and logout and be redirected to the login screen.</td>
+
+                    </tr>
+                    <tr>
+                        <td>1.3</td>
+                        <td>The existing user should have the option to login</td>
+                        <td>Open the application on an android and iOS device, there should be a signin option with VT PID and password fields.</td>
+
+                    </tr>
+                    <tr>
+                        <td>1.4</td>
+                        <td>An existing user, should be able to login successfully with valid password</td>
+                        <td>Enter the VT PID and password in the login screen and click on the sign in button, the user should be redirected to the home screen.</td>
+
+                    </tr>
+                    <tr>
+                        <td>1.5</td>
+                        <td>A logged-in user should have the option to logout successfully</td>
+                        <td>When logged in, after clicking on the Logout button, the user should be able to Logout and redirect to the login screen.</td>
+
+                    </tr>
+
+                </table>
+            </ul>
+            <ul>
+                <li>Profile Service:</li>
+                <table class="w3-table w3-bordered">
+                    <tr>
+                        <th>Test</th>
+                        <td>Goal</td>
+                        <td>Procedure</td>
+                    </tr>
+                    <tr>
+                        <th>1.1</th>
+                        <td>A logged-in user should be able to view the profile details</td>
+                        <td>Login to the application, the user should be able to go to the profile page from the home page and be able to see all the profile details except the password.</td>
+                    </tr>
+                    <tr>
+                        <th>1.2</th>
+                        <td>A logged-in user should be able to edit and save profile details</td>
+                        <td>Login to the application, the user should be able to go to the profile page from the home page and be able to see all the profile details and have the option to update it excerpt the username i.e. VT PID.</td>
+                    </tr>
+                </table>
+            </ul>
+
+        </div>
+
+
     </div>
-      <table class="w3-table w3-bordered">
-          <tr>
-              <td>Test</td>
-              <td>Goal</td>
-              <td>Procedure</td>
-          </tr>
-          <tr>
-              <td>1.1</td>
-              <td>If a new user, has the option to register</td>
-              <td>Open the application on an android and iOS device, there should be a “register” option which should open a registration page.</td>
-          </tr>
-          <tr>
-              <td>1.2</td>
-              <td>If new user, should register successfully</td>
-              <td>On the registration page, the user should enter the VT PID and set a password and logout and be redirected to the login screen.</td>
 
-          </tr>
-          <tr>
-              <td>1.3</td>
-              <td>The existing user should have the option to login</td>
-              <td>Open the application on an android and iOS device, there should be a signin option with VT PID and password fields.</td>
-
-          </tr>
-          <tr>
-              <td>1.4</td>
-              <td>An existing user, should be able to login successfully with valid password</td>
-              <td>Enter the VT PID and password in the login screen and click on the sign in button, the user should be redirected to the home screen.</td>
-
-          </tr>
-          <tr>
-              <td>1.5</td>
-              <td>A logged-in user should have the option to logout successfully</td>
-              <td>When logged in, after clicking on the Logout button, the user should be able to Logout and redirect to the login screen.</td>
-
-          </tr>
-
-      </table>
 
 
     <!-- The Test Scope Section -->
