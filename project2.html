@@ -123,6 +123,92 @@
     <!-- The Test Scope Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testplan">
       <h1>Test Plan</h1>
+        <table class="w3-table w3-bordered">
+            <tr>
+                <th>FR No</th>
+                <td>Features</td>
+                <td>Phase</td>
+                <td>Dependencies</td>
+            </tr>
+            <tr>
+                <th>FR 1</th>
+                <td>Login Services</td>
+                <td>Phase 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FR 4</th>
+                <td>Image Processing</td>
+                <td>Phase 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FR 2</th>
+                <td>Location Services</td>
+                <td>Phase 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FR 8</th>
+                <td>Profile Service</td>
+                <td>Phase 1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>FR 3</th>
+                <td>Parking slot suggestion service</td>
+                <td>Phase 2</td>
+                <td>Dependent on image processing and location service</td>
+            </tr>
+            <tr>
+                <th>FR 5</th>
+                <td>Parking slot search service</td>
+                <td>Phase 2</td>
+                <td>Dependent on image processing and location service</td>
+            </tr>
+            <tr>
+                <th>FR 6</th>
+                <td>Parking Slot Booking Services</td>
+                <td>Phase 3</td>
+                <td>Dependent on parking slot search service</td>
+            </tr>
+            <tr>
+                <th>FR 6</th>
+                <td>Payment Services (using parking permit)</td>
+                <td>Phase 3</td>
+                <td>Dependent on slot booking services</td>
+            </tr>
+            <tr>
+                <th>FR 7</th>
+                <td>Buying parking permit service</td>
+                <td>Phase 3</td>
+                <td>Dependent on payment service</td>
+            </tr>
+            <tr>
+                <th>FR 9</th>
+                <td>Parking details Service</td>
+                <td>Phase 4</td>
+                <td>Dependent on payment and booking services</td>
+            </tr>
+            <tr>
+                <th>NFR 5</th>
+                <td>Parking history service</td>
+                <td>Phase 4</td>
+                <td>Dependent on payment and booking services</td>
+            </tr>
+            <tr>
+                <th>FR 10</th>
+                <td>Parking trends service</td>
+                <td>Phase 5</td>
+                <td>Dependent on Parking history service</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>Performance testing</td>
+                <td>Phase 6</td>
+                <td>Dependent on the full application functional testing completion</td>
+            </tr>
+        </table>
     </div>
 
     <!-- The Test Scope Section -->
