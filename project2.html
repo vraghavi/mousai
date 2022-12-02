@@ -33,7 +33,7 @@
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="#testscope" class="w3-bar-item w3-button">Introduction</a>
           <a href="#requirements" class="w3-bar-item w3-button">Requirements being tested</a>
-          <a href="#outofscope" class="w3-bar-item w3-button">Out of scope requirements</a>
+          <a href="#outofscope" class="w3-bar-item w3-button">Requirements not tested</a>
         </div>
       </div>
       <a href="#testplan" class="w3-bar-item w3-button w3-padding-large">Test Plan</a>
@@ -73,7 +73,7 @@
     <!-- The Test Scope Section -->
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="testscope">
       <h1>Test Scope</h1>
-      <h2 class="w3-wide" id="testscope">Introduction</h2>
+      <h2 class="w3-left-align" id="testscope">Introduction</h2>
       <p class="w3-left-align">
         <b>Project Title: </b> <a
           href="https://sites.google.com/vt.edu/cs5744-vt-smart-parking/home?authuser=0">Virginia Tech Smart Parking
@@ -86,7 +86,7 @@
         requirements.
       </p>
 
-      <h2 class="w3-wide" id="requirements">Requirements Tested</h2>
+      <h2 class="w3-left-align" id="requirements">Requirements Tested</h2>
       <p class="w3-left-align">
         The scope of this test plan will cover all of the functional requirements and some of the non-functional
         requirements as listed below.
@@ -133,7 +133,7 @@
         </p>
       </ul>
 
-      <h2 class="w3-wide" id="outofscope">Requirements not tested</h2>
+      <h2 class="w3-left-align" id="outofscope">Requirements not tested</h2>
       <p class="w3-container">
         This test plan will focus on ensuring the system as a whole as well as the individual components function as
         defined by the requirements. As such, some of the specific details of how the components operate internally will
@@ -162,6 +162,17 @@
         functionalities covered which will be used and integrated with the functionalities that will be tested upcoming
         phases. The first five phases cover the functional testing and integration testing of the application. The last
         phase is for the load and performance testing.
+      </p>
+      <h4 class="w3-left-align">Reason to choose this plan:</h4>
+      <p class="w3-left-align">
+        The objective of the testing is to test and evaluate the functionality of the application in an incremental
+        fashion. The division of the phases for the testing we have chosen is based on the logical progression of the
+        functionality development as it would be blackbox testing. So that the testing can start as soon as a
+        functionality is completed and all the independent functionalities as well as the basic functionalities on which
+        the other functionalities are built upon should be completed first. For example, the Parking Trends Service is
+        in phase 5 because it depends on Parking booking services, location services and parking history services. This
+        helps make the testing easy to consider all the necessary cases at once.<br>
+        Below is the Table 1.1 depicting all the phases with respective requirements and dependencies.
       </p>
       <table class="w3-table w3-bordered">
         <tr>
@@ -277,34 +288,34 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <td>1.1</td>
+              <td>6.1</td>
               <td>If a new user, has the option to register</td>
               <td>Open the application on an android and iOS device, there should be a “register” option which should
                 open a registration page.</td>
             </tr>
             <tr>
-              <td>1.2</td>
+              <td>6.2</td>
               <td>If new user, should register successfully</td>
               <td>On the registration page, the user should enter the VT PID and set a password and logout and be
                 redirected to the login screen.</td>
 
             </tr>
             <tr>
-              <td>1.3</td>
+              <td>6.3</td>
               <td>The existing user should have the option to login</td>
               <td>Open the application on an android and iOS device, there should be a signin option with VT PID and
                 password fields.</td>
 
             </tr>
             <tr>
-              <td>1.4</td>
+              <td>6.4</td>
               <td>An existing user, should be able to login successfully with valid password</td>
               <td>Enter the VT PID and password in the login screen and click on the sign in button, the user should be
                 redirected to the home screen.</td>
 
             </tr>
             <tr>
-              <td>1.5</td>
+              <td>6.5</td>
               <td>A logged-in user should have the option to logout successfully</td>
               <td>When logged in, after clicking on the Logout button, the user should be able to Logout and redirect to
                 the login screen.</td>
@@ -322,13 +333,13 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>1.1</th>
+              <th>6.1</th>
               <td>A logged-in user should be able to view the profile details</td>
               <td>Login to the application, the user should be able to go to the profile page from the home page and be
                 able to see all the profile details except the password.</td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>6.2</th>
               <td>A logged-in user should be able to edit and save profile details</td>
               <td>Login to the application, the user should be able to go to the profile page from the home page and be
                 able to see all the profile details and have the option to update it excerpt the username i.e. VT PID.
@@ -433,22 +444,22 @@
               <td>Procedure -Raghavi</td>
             </tr>
             <tr>
-              <th>2.3</th>
+              <th>2.1</th>
               <td>Users should be able to locate themselves.</td>
               <td>System should get the current location from location services and represent it on the map.</td>
             </tr>
             <tr>
-              <th>2.4</th>
+              <th>2.2</th>
               <td>Users should be able to enter the location name to search</td>
               <td>There should be a text field in the map to enter the location.</td>
             </tr>
             <tr>
-              <th>2.5</th>
+              <th>2.3</th>
               <td>Users should be able to add a criteria of time slot to search the parking slot.</td>
               <td>There should be a field adjust the time for which the user is looking for the slot booking</td>
             </tr>
             <tr>
-              <th>2.6</th>
+              <th>2.4</th>
               <td>Users should be able to find the parking slots location represented on the map</td>
               <td>The system should be able to get a list of parking slot locations within 1 mile radius of the searched
                 location.</td>
@@ -526,32 +537,32 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>3.7</th>
+              <th>3.1</th>
               <td>Payment detail and parking fee should be show on the booking page</td>
               <td>System should calculate the total order fee for the user. Booking page should list the payment details
                 including the booking hours, order total fee, license plate number, packing lot name etc order details
                 in the booking page for the user to review and check.</td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>3.2</th>
               <td>Users are able to pay the parking fee using parking permits</td>
               <td>Users need to pay their parking fee by using parking permits. Parking permit should have enough
                 deposit money in it.</td>
             </tr>
             <tr>
-              <th>1.3</th>
+              <th>3.3</th>
               <td>Refund fee if user do not check-in</td>
               <td>If the user does not check-in but already pays the parking fee, the system should refund the fee back
                 to the user directly.</td>
             </tr>
             <tr>
-              <th>1.4</th>
+              <th>3.4</th>
               <td>Guide back to parking permit service.Page if deposit money is not enough.</td>
               <td>If the remaining deposit money in the parking permit is less than the current parking fee, system
                 should show message to remind user and guide user to parking permit service page.</td>
             </tr>
             <tr>
-              <th>1.5</th>
+              <th>3.5</th>
               <td>Guide back to parking permit service.Page if user do not have a parking permit</td>
               <td>If the user do not have a parking permit yet, system should show message to remind user and guide user
                 to parking permit service page.</td>
@@ -567,18 +578,18 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>1.1</th>
+              <th>3.1</th>
               <td>A logged-in user should be able to buy a parking permit</td>
               <td>One user is assumed to have one parking permit to book a parking slot. If the user does not have one,
                 they should buy one on the parking permit service page.</td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>3.2</th>
               <td>Users can deposit money in parking permit</td>
               <td>If a user has a parking permit, they can deposit money in it by debit card or credit card.</td>
             </tr>
             <tr>
-              <th>1.3</th>
+              <th>3.3</th>
               <td>Validate the debit card or credit card when buying a parking permit and deposit money.</td>
               <td>Verify payment success or failure.</td>
             </tr>
@@ -609,12 +620,12 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>1.1</th>
+              <th>4.1</th>
               <td>Users can find their booking time, slot location, booking role, and other booking details</td>
               <td>The parking detail should show enough parking details on page</td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>4.2</th>
               <td>User can delete or archive the parking detail</td>
               <td>There should be a button for the user to remove or archive the current detail data</td>
             </tr>
@@ -629,19 +640,19 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>1.1</th>
+              <th>4.1</th>
               <td>Users can search the history parking details based on different keywords</td>
               <td>There should be a search bar for users. Users can input the search bar and press the search button.
               </td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>4.2</th>
               <td>Users can remove their history by single or deleting all</td>
               <td>There should be buttons for removing a single history record or deleting all. Users could press that
                 button to update the data.</td>
             </tr>
             <tr>
-              <th>1.3</th>
+              <th>4.3</th>
               <td>User can browse their history records</td>
               <td>There should be a list for the user to browse after searching by scrolling up and down.</td>
             </tr>
@@ -670,13 +681,13 @@
               <td>Procedure</td>
             </tr>
             <tr>
-              <th>1.1</th>
+              <th>5.1</th>
               <td>System could display the number of days’ parking trends</td>
               <td>After logging into the application and going to the home page, users could see the parking trends on
                 the graph.</td>
             </tr>
             <tr>
-              <th>1.2</th>
+              <th>5.2</th>
               <td>Users could select the number of days to see the parking trends</td>
               <td>Users could select the drop-down button and choose the number of days to check different parking trend
                 graph</td>
@@ -704,64 +715,64 @@
             <td>Procedure</td>
           </tr>
           <tr>
-            <th>1.1</th>
+            <th>6.1</th>
             <td>Login Page</td>
             <td>Check the response time for getting to the login page with multiple load hits to check the performance.
             </td>
           </tr>
           <tr>
-            <th>1.2</th>
+            <th>6.2</th>
             <td>Home Page</td>
             <td>Check the response time for getting to the home page with multiple load hits to check the performance
               after login.</td>
           </tr>
           <tr>
-            <th>1.3</th>
+            <th>6.3</th>
             <td>Image Processing</td>
             <td></td>
           </tr>
           <tr>
-            <th>1.4</th>
+            <th>6.4</th>
             <td>Profile Page</td>
             <td>Check the response time for getting from the home page to the profile page with multiple load hits to
               check the performance. Check the response time for getting the response message after the update profile
               button is clicked.</td>
           </tr>
           <tr>
-            <th>1.5</th>
+            <th>6.5</th>
             <td>Parking Slot Booking Services</td>
             <td>Check the response time and ensure the correctness when multiple user booking the parking slot at the
               same time</td>
           </tr>
           <tr>
-            <th>1.6</th>
+            <th>6.6</th>
             <td>Payment Services (using parking permit)</td>
             <td>Check the response time when payment services have high user loads.</td>
           </tr>
           <tr>
-            <th>1.7</th>
+            <th>6.7</th>
             <td>Buying parking permit service</td>
             <td>Check the response time for validating the payment success or failure.</td>
           </tr>
           <tr>
-            <th>1.8</th>
+            <th>6.8</th>
             <td>Parking Detail Page</td>
             <td>Check the loading time of parking details pages when there exists high user loads</td>
           </tr>
           <tr>
-            <th>1.9</th>
+            <th>6.9</th>
             <td>Parking History Page</td>
             <td>Check the loading time when the history record is initialized. Check the response time when doing the
               search function with high user loads</td>
           </tr>
           <tr>
-            <th>2</th>
+            <th>6.10</th>
             <td>Parking Trend Page</td>
             <td>Check the loading time when the parking trend graph is initialized. Check the response time when
               selecting different number of days with high user loads</td>
           </tr>
           <tr>
-            <th>2.1</th>
+            <th>6.11</th>
             <td>Registration Page</td>
             <td>Check the response time when doing the registration activity with high user loads</td>
           </tr>
